@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact us</title>
+<link href="project css/project.css" type="text/css" rel="stylesheet"/>
+	</head>
+
+<body>
+<section class="container">
+<header>
+<section class="logo"><img src="home img/LOGO1.png"/></section>
+<nav>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li>Fleet
+<ul>
+<li><a href="sailing  Boats web.html">Sailing</a></li>
+<li><a href="Fishing web.html">Fishing</a></li>
+<li><a href="luxury boats web.html">Luxury</a></li>
+</ul>	
+</li>
+<li><a href="about us web.html">About us</a></li>
+<li><a href="gallery web.html">Gallery</a></li>
+<li><a class="active">Contact us</a></li>
+<li><a href="feedback web.html">Feedback</a></li>
+<li><a href="quriey link.html">Queries Link</a></li>
+<li><a href="map web.html">Site Map</a></li>
+
+</ul>
+</nav>
+</header>
+<section class="containerboat">
+<section class="containerboat1"><section class="containerboat2">
+	<section class="slider"><section class="mainslider">
+<section class="main">
+<img src="gallery/IMG_5177.jpg" height="300" width="1170"/>
+<img src="gallery/IMG_5191.jpg" height="300" width="1170"/>
+<img src="gallery/IMG_5212.jpg" height="300" width="1170"/>
+<img src="gallery/IMG_5198.jpg" height="300" width="1170"/>
+<img src="gallery/IMG_5183.jpg" height="300" width="1170"/>
+<img src="gallery/IMG_5193.jpg" height="300" width="1170"/>
+	</section><marquee>708 Harbor Drive, Wanchese, North Carolina 27981
+			Marina Offshore Pte Ltd © 2013. </marquee></section>
+</section>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<section class="contact1">
+		<section class="contact">
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<h1>Contact Us</h1><br><br><br><br><br>
+<form >
+<h2>
+Your Name:</h2>
+<br><br><h2>
+<input type="text" id="name" name="name" placeholder=" Enter Your Name" class="input1"></h2>
+<br><br><br><br><h2>
+Your Email:</h2>
+<br><br><h2>
+<input type="text" id="email" name="email" placeholder=" Enter Your Email" class="input1"/></h2>
+<br><br><br><br><h2>
+Message</h2>
+<br><br><h2>
+<textarea id="message" rows="10" cols="37" placeholder="Enter Your Message" ></textarea></h2>
+<br><br>
+<br><br>
+<br><br>
+<br>
+	<br><br>
+<br>
+<br><h2>
+<input type="submit" id="submit" value="Submit" onClick="vilidation()" class="input"/></h2>
+</form>
+	</section>
+	</section>
+	
+</section></section>
+	
+</section>
+
+	<section class="maincontainer4">
+		<footer><p class="footerp">Outer Banks Marina
+708 Harbor Drive, Wanchese, North Carolina 27981
+			Marina Offshore Pte Ltd © 2013.
+			All rights reserved.</p>
+</footer><section class="footer">You are here: Fleet</section></section>
+	</section>
+</body>
+</html>
+<script>
+
+function vilidation(){
+	
+	var name =   document.getElementById('name').value;
+	var email =  document.getElementById('email').value;
+	var message = document.getElementById('message').value;
+	var vemail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+	var vname = /^([A-Za-z_\-\.]{3,13})$/;
+	if(name==""){
+		
+		alert("Please  Enter Your Name ");
+		
+		
+	}
+	else if(vname.test(name)== false ){
+		alert("Please Check Your Enter Name is Wrong");
+		}
+	else if (email==""){
+		alert("Please  Enter Your Email")
+		}
+
+	else if (vemail.test(email)== false){
+		alert("Please Check Your Enter Email is Wrong");
+		}
+	else if (message==""){
+		alert("Please  Enter Your Message")
+		}
+	else {
+		
+		alert("Thank You");
+	}
+}
+</script>
